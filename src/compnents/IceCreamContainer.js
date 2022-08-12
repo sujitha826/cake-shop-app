@@ -8,8 +8,8 @@ export default function IceCreamContainer() {
 
     return (
         <div>
-            <h2>Number of cakes - {numOfIcecreams} </h2>
-            <button onClick={() => dispatch(buyIceCream())}>Buy Cake</button>
+            <h2>Number of IceCreams - {numOfIcecreams} </h2>
+            <button onClick={() => dispatch(buyIceCream())}>Buy IceCream</button>
         </div>
     )
 }
