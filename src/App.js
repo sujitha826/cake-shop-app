@@ -20,10 +20,10 @@ function App() {
         <IceCreamContainer />
         <DataFetching />
         <IntervalHookCounter />
-        <ToggleMouseContainer />*/}
+        <ToggleMouseContainer />
 
         <FocusInput />
-        <HookTimer />
+        <HookTimer />*/}
 
       </div>
     </Provider>

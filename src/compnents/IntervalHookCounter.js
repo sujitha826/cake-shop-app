@@ -4,8 +4,8 @@ function IntervalHookCounter() {
     const [count, setCount] = useState(0);
 
     const tick = () => {
-        setCount(count + 1)
-    };
+        setCount(count + 1);
+    }
 
     useEffect(() => {
         console.log('useFffect called during mounting of the component');
