@@ -10,24 +10,38 @@ import IntervalHookCounter from './compnents/IntervalHookCounter';
 import ToggleMouseContainer from './compnents/ToggleMouseContainer';
 import FocusInput from './compnents/FocusInput';
 import HookTimer from './compnents/HookTimer';
+import CounterUsingReducerHook from './compnents/CounterUsingReducerHook';
+import CounterTwo from './compnents/CounterReducerComplex';
+import ComponentC from './compnents/ComponentC';
+
+export const UserContext = React.createContext();
+export const TopicContext = React.createContext();
 
 function App() {
   return (
-    <Provider store={store}>
+    <div className="App">
+      <UserContext.Provider value={'Sujitha'}>
+        <TopicContext.Provider value={'CodeLearningIsFun'}>
+          <ComponentC />
+        </TopicContext.Provider>
+      </UserContext.Provider>
+    </div>
+  );
+  {/*<Provider store={store}>
       <div className="App">
-        {/* <UsersContainer /> 
+         <UsersContainer /> 
         <CakeContainer />
         <IceCreamContainer />
         <DataFetching />
         <IntervalHookCounter />
         <ToggleMouseContainer />
-
         <FocusInput />
-        <HookTimer />*/}
-
+        <HookTimer />
+        <CounterUsingReducerHook />
+        <CounterTwo />
       </div>
-    </Provider>
-  );
+    </Provider>*/}
+
 }
 
 export default App;
