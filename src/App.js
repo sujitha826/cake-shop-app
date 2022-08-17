@@ -13,6 +13,8 @@ import HookTimer from './compnents/HookTimer';
 import CounterUsingReducerHook from './compnents/CounterUsingReducerHook';
 import CounterTwo from './compnents/CounterReducerComplex';
 import ComponentC from './compnents/ComponentC';
+import HolidaysFetch from './compnents/HolidaysFetch';
+import Compostion from './compnents/Compostion';
 
 export const UserContext = React.createContext();
 export const TopicContext = React.createContext();
@@ -23,6 +25,7 @@ function App() {
       <UserContext.Provider value={'Sujitha'}>
         <TopicContext.Provider value={'CodeLearningIsFun'}>
           <ComponentC />
+          <Compostion />
         </TopicContext.Provider>
       </UserContext.Provider>
     </div>
